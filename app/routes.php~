@@ -11,5 +11,9 @@
 |
 */
 
+Route::get('/', function()
+{
+	return View::make('hello');
+});
 
-Route::controller('/', "TestController");
+Route::controller('/test', "TestController");

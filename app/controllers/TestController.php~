@@ -6,7 +6,8 @@ class TestController extends BaseController {
 
 	public function getIndex()
 	{
-		return $this->layout->content = View::make('test.index');
+		$nombre="Algo";
+		return $this->layout->content = View::make('test.index', compact("nombre"));
 	}
 
 }
