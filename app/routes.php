@@ -10,6 +10,8 @@
 | and give it the Closure to execute when that URI is requested.
 |
 */
+Route::controller('/buscar',"BuscarController");
+
+Route::controller('/',"TestController");
 
 
-Route::controller('/', "TestController");

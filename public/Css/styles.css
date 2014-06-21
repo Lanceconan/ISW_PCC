@@ -1,28 +1,27 @@
 body{
 	background-color: #073763;
-	overflow-y: hidden;
 }
 
 .principal
 {
 	background-color:#dddddd;
 	border: solid #B5ADAD 1px;
-	position: relative;
-	width: 70%;
-	height: 100%;
-	margin-left: 15%;
+	position: fixed;
+	min-width: 320px;
+	min-height: 800px;
+	left: 150px;
 	text-align: center;
-	font-family: Verdana;
+	font-family: verdana;
 
 }
 
 #foot
 {
 	background-color: #085394;
-	width: 100%;
-	height: 10%;
-	position: relative;
-	margin-top: 27%;
+	min-width: 730px;
+	min-height: 40px;
+	position: fixed;
+	top:463px;
 	font-family:monospace;
 	font-size: .7em;
 	text-align: right;
@@ -31,15 +30,17 @@ body{
 
 #foot2
 {
-	text-align: left;
-	position: bottom;
+	background-image: ("logo.png");
+	position: fixed;
+	left: 150px;
+	bottom: 10px;
 }
 
 #Datos
 {
 	border:double black 5px;	
 	position:relative;
-	margin-top: 10%;
-	margin-left:32%;	
-	width:32%
+	top: 115px;
+	left:25%;	
+	width:40%
 }
