@@ -10,8 +10,8 @@
 
 <body>
 <div class="principal">
-	<h1>Planificaci&oacuten semestral para asignaturas de la UTEM</h1>
-	<div id="Datos">
+	<h1>Planificaci&oacuten semestral para asignaturas UTEM</h1>
+	<div id="login">
 <form method="post" action="index.php">
         <table >
             <br>
@@ -30,13 +30,16 @@
         </table>
 </form>
 </div>
+<div id="logo"><img src="Images/utem.jpg"></div>
 	<div id="foot">
 		<p>UNIVERSIDAD TECNOLOGICA METROPOLITANA</p>
 		<p>Dieciocho 161, Santiago-Chile</p>
-		<div id="foot2">
+		<div id="link-logo">
 			<a href=http://www.utem.cl><img src ="Images/logo.png"></a>
 		</div>
 	</div>
+    <div id="linea">
+    </div>
 </div>
 </body>
 </html>

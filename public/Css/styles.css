@@ -7,7 +7,7 @@ body{
 	background-color:#dddddd;
 	border: solid #B5ADAD 1px;
 	position: fixed;
-	min-width: 320px;
+	min-width: 722px;
 	min-height: 800px;
 	left: 150px;
 	text-align: center;
@@ -18,17 +18,17 @@ body{
 #foot
 {
 	background-color: #085394;
-	min-width: 730px;
+	min-width: 722px;
 	min-height: 40px;
 	position: fixed;
-	top:463px;
+	top:454px;
 	font-family:monospace;
 	font-size: .7em;
 	text-align: right;
 	color: white;
 }
 
-#foot2
+#link-logo
 {
 	background-image: ("logo.png");
 	position: fixed;
@@ -36,11 +36,39 @@ body{
 	bottom: 10px;
 }
 
-#Datos
+#login
 {
 	border:double black 5px;	
 	position:relative;
-	top: 115px;
-	left:25%;	
-	width:40%
+	top: 110px;
+	left:211px;	
+	width:300px;
+	font-family: verdana;
+}
+
+#linea
+{
+	background-color: 00ffff;
+	position: fixed;
+	top:502px;
+	min-width: 722px;
+	min-height: 10px;
+}
+
+#logo
+{
+	position: fixed;
+	left: 247px;
+	top:345px;
+	height: 99px;
+	width: 533px;
+}
+
+.menu1
+{
+	background-color: white;
+	position: fixed;
+	top: 90 px;
+	min-width: 722px;
+	min-height: 30px;
 }

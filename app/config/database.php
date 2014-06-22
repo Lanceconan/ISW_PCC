@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'default' => 'mysql',
+	'default' => 'pgsql',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -65,13 +65,13 @@ return array(
 
 		'pgsql' => array(
 			'driver'   => 'pgsql',
-			'host'     => 'localhost',
-			'database' => 'database',
-			'username' => 'root',
-			'password' => '',
+			'host'     => '143.83.181.4',
+			'database' => 'iswdb',
+			'username' => 'grupo01',
+			'password' => '6fdde6',
 			'charset'  => 'utf8',
 			'prefix'   => '',
-			'schema'   => 'public',
+			'schema'   => 'grupo01',
 		),
 
 		'sqlsrv' => array(
@@ -114,8 +114,8 @@ return array(
 		'cluster' => false,
 
 		'default' => array(
-			'host'     => '127.0.0.1',
-			'port'     => 6379,
+			'host'     => '127.0.0.0',
+			'port'     => 6432,
 			'database' => 0,
 		),
 
