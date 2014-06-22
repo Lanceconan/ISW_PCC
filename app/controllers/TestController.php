@@ -6,7 +6,7 @@ class TestController extends BaseController {
 
 	public function getIndex()
 	{
-		return $this->layout->content = View::make('test.index');
+		return $this->layout->content = View::make('login.index');
 	}
 
 }
