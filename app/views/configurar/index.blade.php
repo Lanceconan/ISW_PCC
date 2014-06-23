@@ -10,7 +10,7 @@
 
 <body>
 <div class="principal">
-	<h1>B&uacutesqueda</h1>
+	<h1>Configurar cuenta de usuario</h1>
 	<div class="menu">
 	<ul>
 		<li><a href="#">Manejo de cuentas</a>
