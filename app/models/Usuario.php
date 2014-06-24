@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Description of usuarios
+ * Modelo de tabla usuarios
  *
  */
 class Usuario extends \Eloquent {

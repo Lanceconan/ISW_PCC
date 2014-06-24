@@ -1,15 +1,13 @@
 <?php
 
 /**
- * Description of roles
+ * Modelo de tabla roles
  *
  */
+ 
 class Rol extends \Eloquent {
 
     protected $table = "roles";
-    public $LlavePrimaria = 'pk';
-    public $rol = 'rol';
-    public $descripcion = 'descripcion';
     public $timestamps = false;
 
     public function usuarios() {
