@@ -65,7 +65,7 @@ return array(
 
 		'pgsql' => array(
 			'driver'   => 'pgsql',
-			'host'     => '143.83.181.4',
+			'host'     => '146.83.181.4',
 			'database' => 'iswdb',
 			'username' => 'grupo01',
 			'password' => '6fdde6',
