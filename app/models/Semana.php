@@ -10,7 +10,7 @@ class Semana extends \Eloquent {
     public $timestamps = false;
 
     public function planificaciones() {
-        return $this->belongs_to('Planificacion'); //pendiente
+        return $this->belongsTo('Planificacion', 'planificacion_fk'); 
     }
 }
 ?>

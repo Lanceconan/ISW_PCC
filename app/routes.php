@@ -15,6 +15,6 @@ Route::controller('/config',"ConfigController");
 
 Route::controller('/buscar',"BuscarController");
 
-Route::controller('/',"TestController");
+Route::get('/',"TestController@getIndex");
 
 

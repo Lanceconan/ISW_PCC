@@ -10,19 +10,19 @@ class Departamento extends \Eloquent {
     public $timestamps = false;
 
     public function asignaturas() {
-        return $this->has_many('Asignatura');
+        return $this->hasMany('Asignatura');
     }
 	
 	public function docentes() {
-        return $this->has_many('Docente');
+        return $this->hasMany('Docente');
     }
 	
 	public function facultades() {
-        return $this->belongs_to('Facultad');
+        return $this->belongsTo('Facultad', 'facultad_fk');
     }
 	
 	public function escuela() {
-        return $this->has_many('Escuela');
+        return $this->hasMany('Escuela');
     }
 }
 ?>

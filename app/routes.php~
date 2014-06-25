@@ -11,9 +11,10 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
-});
+Route::controller('/config',"ConfigController");
 
-Route::controller('/test', "TestController");
+Route::controller('/buscar',"BuscarController");
+
+Route::get('/',"TestController@getIndex");
+
+

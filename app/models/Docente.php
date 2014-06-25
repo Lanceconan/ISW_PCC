@@ -10,15 +10,15 @@ class Docente extends \Eloquent {
     public $timestamps = false;
 
     public function cargos() {
-        return $this->has_many_and_belongs_to('Cargo');
+        return $this->belongsToMany('Cargo', 'administrativos', 'docente_fk', 'cargo_fk');
     }
 	
 	public function departamentos() {
-        return $this->belongs_to('Departamento');
+        return $this->belongsTo('Departamento', 'deparamento_fk');
     }
 	
 	public function cursos() {
-        return $this->has_many('Cursos');
+        return $this->hasMany('Cursos');
     }
 }
 ?>

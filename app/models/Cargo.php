@@ -10,7 +10,7 @@ class Cargo extends \Eloquent {
     public $timestamps = false;
 
     public function docentes() {
-        return $this->has_many_and_belongs_to('Docente');
+        return $this->belongsToMany('Docente', 'administrativos', 'cargo_fk', 'docente_fk');
     }
 }
 ?>

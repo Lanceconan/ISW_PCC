@@ -10,11 +10,11 @@ class Carrera extends \Eloquent {
     public $timestamps = false;
 
     public function escuelas() {
-        return $this->belongs_to('Escuela');
+        return $this->belongsTo('Escuela', 'escuela_fk');
     }
 	
 	public function planificaciones() {
-        return $this->has_many('Planificacion');
+        return $this->hasMany('Planificacion');
     }
 }
 ?>

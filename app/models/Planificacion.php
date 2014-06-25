@@ -10,15 +10,15 @@ class Planificacion extends \Eloquent {
     public $timestamps = false;
 
     public function semanas() {
-        return $this->has_many('Semana', ''); //pendiente
+        return $this->hasMany('Semana');
     }
 	
 	public function cursos() {
-        return $this->belongs_to('Curso', ''); //pendiente
+        return $this->belongsTo('Curso', 'curso_fk'); 
     }
 	
 	public function carreras() {
-        return $this->belongs_to('Carrera', ''); //pendiente
+        return $this->belongsTo('Carrera', 'carrera_fk'); 
     }
 }
 ?>

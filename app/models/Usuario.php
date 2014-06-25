@@ -1,9 +1,9 @@
 <?php
 
 /**
- * Modelo de tabla usuarios
- *
- */
+* Modelo de tabla usuarios
+*
+*/
 class Usuario extends \Eloquent {
 
     protected $table = "usuarios";
@@ -11,8 +11,7 @@ class Usuario extends \Eloquent {
     public $timestamps = false;
 
     public function roles() {
-        return $this->has_many_and_belongs_to('Rol');
+        return $this->belongsToMany('Rol', 'roles_usuarios', 'usuario_fk', 'rol_fk');
     }
 
 }
-?>

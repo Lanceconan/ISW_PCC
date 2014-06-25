@@ -10,11 +10,11 @@ class Escuela extends \Eloquent {
     public $timestamps = false;
 
     public function departamentos() {
-        return $this->belongs_to('Departamento');
+        return $this->belongsTo('Departamento', 'departamento_fk');
     }
 	
 	public function carreras() {
-        return $this->has_many('Carrera');
+        return $this->hasMany('Carrera');
     }
 }
 ?>

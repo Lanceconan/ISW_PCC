@@ -72,7 +72,8 @@ return array(
 			'charset'  => 'utf8',
 			'prefix'   => '',
 			'schema'   => 'grupo01',
-			'port'	   => '6432',
+                        'port'     => '6432',
+                    
 		),
 
 		'sqlsrv' => array(

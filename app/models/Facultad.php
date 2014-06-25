@@ -10,7 +10,7 @@ class Facultad extends \Eloquent {
     public $timestamps = false;
 
     public function departamentos() {
-        return $this->has_many('Departamento');
+        return $this->hasMany('Departamento');
     }
 }
 ?>

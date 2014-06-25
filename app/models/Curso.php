@@ -10,15 +10,15 @@ class Curso extends \Eloquent {
     public $timestamps = false;
 
     public function asignaturas() {
-        return $this->belongs_to('Asignatura');
+        return $this->belongsTo('Asignatura', 'asignatura_fk');
     }
 	
 	public function docentes() {
-        return $this->belongs_to('Docente');
+        return $this->belongsTo('Docente', 'docente_fk');
     }
 	
 	public function planificaciones() {
-        return $this->has_one('Planificacion');
+        return $this->hasOne('Planificacion');
     }
 }
 ?>
