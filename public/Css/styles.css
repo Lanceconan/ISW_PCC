@@ -24,10 +24,10 @@ body{
 #foot
 {
 	background-color: #085394;
-	min-width: 963px;
-	min-height: 70.5%;
+	min-width: 70.5%;
+	min-height: 40px;
 	position: fixed;
-	top:464px;
+	top:90%;
 	left:150px;
 	font-family:monospace;
 	font-size: .7em;
@@ -47,8 +47,8 @@ body{
 {
 	border:double black 5px;	
 	position:relative;
-	top: 110px;
-	left: 300px;	
+	top: 55%;
+	left:211px;	
 	width:300px;
 	font-family: verdana;
 }
@@ -57,7 +57,7 @@ body{
 {
 	background-color: 00ffff;
 	position: fixed;
-	top:502px;
+	top:98.5%;
 	left:150px;
 	min-width: 70.5%;
 	min-height: 11px;
@@ -66,8 +66,8 @@ body{
 #logo
 {
 	position: fixed;
-	left: 340px;
-	top:345px;
+	left: 247px;
+	top:76%;
 	height: 99px;
 	width: 533px;
 }
