@@ -19,13 +19,26 @@ left: 150px;
 right: 150px;
 text-align: center;
 font-family: verdana;
+}
+
+.principalConfig
+{
+background-color:#dddddd;
+border: solid #B5ADAD 1px;
+position: fixed;
+min-width: 70.35%;
+min-height: 800px;
+left: 180px;
+right: 200px;
+text-align: center;
+font-family: verdana;
 
 }
 
 #foot
 {
 background-color: #085394;
-min-width: 1066px;
+min-width: 1064px;
 min-height: 70px;
 position: fixed;
 top:90%;
@@ -36,11 +49,25 @@ text-align: right;
 color: white;
 }
 
+#footConfig
+{
+background-color: #085394;
+min-width: 984px;
+min-height: 70px;
+position: fixed;
+top:90%;
+left:180px;
+font-family:monospace;
+font-size: .7em;
+text-align: right;
+color: white;
+}
+
 #link-logo
 {
-background-image: ("logo.png");
+background-image: ("Images/logo.png");
 position:fixed;
-left: 150px;
+left: 180px;
 bottom: 8px;
 }
 
@@ -60,7 +87,17 @@ background-color: 00ffff;
 position: fixed;
 top:98.5%;
 left:150px;
-min-width: 1066px;
+min-width: 1064px;
+min-height: 11px;
+}
+
+#lineaConfig
+{
+background-color: 00ffff;
+position: fixed;
+top:98.5%;
+left:180px;
+min-width: 984px;
 min-height: 11px;
 }
 
@@ -77,8 +114,8 @@ width: 533px;
 {
 position: fixed;
 top: 65px;
-left:150px;
-min-width: 722px;
+left:220px;
+min-width: 900px;
 min-height: 14px;
 font-size: 14px;
 margin: auto;
@@ -101,7 +138,7 @@ background-color: #073763;
 color: white;
 text-decoration: none;
 display:block;
-padding:10px 57.265px;
+padding:15px 71.86px;
 float:left;
 }
 
