@@ -18,17 +18,25 @@
         <table >
             <br>
             <tr> 
-                    <td><label>Usuario:</label></td>
-                    <td><input type="number" name="usuario" placeholder="RUT" required></input></td>
+                    <select id="botones">
+                        <option value="director">Ingresar Como</option>
+                        <option value="director">Director</option>
+                        <option value="profesor">Profesor</option>
+                        <option value="comun">Comun</option>                        
+                    </select>
+            </tr> 
+            <tr>             
+                    <td><label id="botones">Usuario:</label></td>
+                    <td><input id="botones" type="number" name="usuario" placeholder="RUT" required></input></td>
             </tr> 
             <tr> 
-                    <td><label>Contraseña:</label></td>
-                    <td><input type= "password" name="contrasena"  placeholder="Contraseña" required></input></td>
+                    <td><label id="botones">Contraseña:</label></td>
+                    <td><input id="botones" type= "password" name="contrasena"  placeholder="Contraseña" required></input></td>
                     <td></td>
             <tr> 
                     <td>
-                        <input type="submit" value ="Ingresar" required></input>
-                        <input type="reset" value="Limpiar">
+                        <input id="botones" type="submit" value ="Ingresar" required></input>
+                        <input id="botones" type="reset" value="Limpiar">
                     </td>
             </tr> 
             </tr> 
