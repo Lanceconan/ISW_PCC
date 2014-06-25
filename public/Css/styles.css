@@ -1,123 +1,128 @@
 body{
-	background-color: #073763;
+background-color: #073763;
 }
 
 *
 {
-	padding: 0px;
-	margin: 0px;
+padding: 0px;
+margin: 0px;
 }
 
 .principal
 {
-	background-color:#dddddd;
-	border: solid #B5ADAD 1px;
-	position: fixed;
-	min-width: 70.35%;
-	min-height: 800px;
-	left: 150px;
-	text-align: center;
-	font-family: verdana;
+background-color:#dddddd;
+border: solid #B5ADAD 1px;
+position: fixed;
+min-width: 70.35%;
+min-height: 800px;
+left: 150px;
+right: 150px;
+text-align: center;
+font-family: verdana;
 
 }
 
 #foot
 {
-	background-color: #085394;
-	min-width: 70.5%;
-	min-height: 40px;
-	position: fixed;
-	top:90%;
-	left:150px;
-	font-family:monospace;
-	font-size: .7em;
-	text-align: right;
-	color: white;
+background-color: #085394;
+min-width: 1066px;
+min-height: 70px;
+position: fixed;
+top:90%;
+left:150px;
+font-family:monospace;
+font-size: .7em;
+text-align: right;
+color: white;
 }
 
 #link-logo
 {
-	background-image: ("logo.png");
-	position: fixed;
-	left: 150px;
-	bottom: 8px;
+background-image: ("logo.png");
+position:fixed;
+left: 150px;
+bottom: 8px;
 }
 
 #login
 {
-	border:double black 5px;	
-	position:relative;
-	top: 55%;
-	left:211px;	
-	width:300px;
-	font-family: verdana;
+border:double black 5px;	
+position:relative;
+top: 100px;
+left:291px;
+width:450px;
+font-family: verdana;
 }
 
 #linea
 {
-	background-color: 00ffff;
-	position: fixed;
-	top:98.5%;
-	left:150px;
-	min-width: 70.5%;
-	min-height: 11px;
+background-color: 00ffff;
+position: fixed;
+top:98.5%;
+left:150px;
+min-width: 1066px;
+min-height: 11px;
 }
 
 #logo
 {
-	position: fixed;
-	left: 247px;
-	top:76%;
-	height: 99px;
-	width: 533px;
+position: fixed;
+left: 410px;
+top:60%;
+height: 99px;
+width: 533px;
 }
 
 .menu
 {
-	position: fixed;
-	top: 65px;
-	left:150px;
-	min-width: 722px;
-	min-height: 14px;
-	font-size: 14px;
-	margin: auto;
-	text-align: left;
+position: fixed;
+top: 65px;
+left:150px;
+min-width: 722px;
+min-height: 14px;
+font-size: 14px;
+margin: auto;
+text-align: left;
 }
 
 ul, ol
 {
-	list-style: none;
+list-style: none;
 }
 
-.menu > li 
+.menu > li
 {
      float:left;
 }
 
 .menu li a
 {
-	background-color: #073763;
-	color: white;
-	text-decoration: none;
-	display:block;
-	padding:10px 57.265px;
-	float:left;
+background-color: #073763;
+color: white;
+text-decoration: none;
+display:block;
+padding:10px 57.265px;
+float:left;
 }
 
 .menu li a:hover
 {
-	top:150px;
-	background-color: #0BC308;
+top:150px;
+background-color: #0BC308;
 }
 
 .menu li ul
 {
-	display: none;
-	position: absolute;
-	min-width: 300px;
+display: none;
+position: absolute;
+min-width: 300px;
 }
 
 .menu li:hover > ul
 {
-	display: block;
+display: block;
+}
+
+#botones{
+font-size: 18px;
 }
