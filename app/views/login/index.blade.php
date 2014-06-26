@@ -6,7 +6,6 @@
 <?php echo HTML::script('Js/funciones.js');?>
 @section('css')
 <?php echo HTML::style('Css/styles.css');?>
-
 <html>
 
 <body>
@@ -14,7 +13,7 @@
 <div class="principal">
 	<h1>Planificaci&oacuten semestral para asignaturas UTEM</h1>
 	<div id="login">
-        <form method="post" action="index.php">
+        <form method="post" action="#">
         <table >
             <br>
             <tr> 
