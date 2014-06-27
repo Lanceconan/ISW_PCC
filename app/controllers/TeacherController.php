@@ -1,6 +1,5 @@
 <?php
 
-// Teacher Controller.php
 class TeacherController extends BaseController {
 
 	protected $layout = 'layouts.master';

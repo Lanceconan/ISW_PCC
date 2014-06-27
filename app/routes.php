@@ -1,6 +1,12 @@
 <?php
 
-Route::get('/',"StartController@showLogin");
+Route::resource('consulta','QueryController');
+
+Route::get('/',"StartController@Index");
+
+Route::get('/admin',"StartController@loginAdmin");
+
+Route::post('/admin',"StartController@validarAdmin");
 
 // Validamos los datos de inicio de sesión.
 Route::post('/', 'StartController@postLogin');
@@ -14,7 +20,7 @@ Route::group(array('before' => 'auth'), function()
     // Esta ruta nos servirá para cerrar sesión.
     Route::get('logout', 'StartController@logOut');
 
-    // Servirá para buscar.
+    //Servirá para buscar.
     Route::get('/buscar','AdminController@getIndex');
 
     Route::post('/buscar','AdminController@getIndex');
@@ -33,7 +39,7 @@ Route::group(array('before' => 'auth'), function()
 
 });
 
-Route::group(array('before' => 'auth'), function()
+Route::group(array('before' => 'authProfe'), function()
 {
     // Esta será nuestra ruta de bienvenida.
     Route::get('/index', 'TeacherController@getIndex');
@@ -41,7 +47,7 @@ Route::group(array('before' => 'auth'), function()
     // Esta ruta nos servirá para cerrar sesión.
     Route::get('logout', 'StartController@logOut');
 
-    // Servirá para buscar.
+    //Servirá para buscar.
     Route::get('/buscar','TeacherController@getIndex');
 
     Route::post('/buscar','TeacherController@getIndex');
@@ -87,7 +93,7 @@ Route::group(array('before' => 'auth'), function()
     // Esta ruta nos servirá para cerrar sesión.
     Route::get('logout', 'StartController@logOut');
 
-    // Servirá para buscar.
+    //Servirá para buscar.
     Route::get('/buscar','DirController@getIndex');
 
     Route::post('/buscar','DirController@getIndex');

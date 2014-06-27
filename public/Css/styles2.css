@@ -8,10 +8,6 @@ body{
 	margin: 0px;
 }
 
-#link
-{
-	color:black;
-}
 .principal
 {
 	background-color:#dddddd;
@@ -81,7 +77,7 @@ body{
 	position: fixed;
 	top: 65px;
 	left:150px;
-	width: 100%;
+	min-width: 100%;
 	min-height: 14px;
 	font-size: 14px;
 	margin: auto;
@@ -104,7 +100,7 @@ ul, ol
 	color: white;
 	text-decoration: none;
 	display:block;
-	padding:10px 94px;
+	padding:10px 32.05px;
 	float:left;
 }
 

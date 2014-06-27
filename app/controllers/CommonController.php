@@ -1,6 +1,5 @@
 <?php
 
-// Common Controller.php
 class CommonController extends BaseController {
 
 	protected $layout = 'layouts.master';

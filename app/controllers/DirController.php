@@ -1,6 +1,5 @@
 <?php
 
-// Dir Controller.php
 class DirController extends BaseController {
 
 	protected $layout = 'layouts.master';
