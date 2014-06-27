@@ -1,3 +1,24 @@
+## Planificación Semestral de Asignaturas ##
+
+## Integrantes: 
+- Carlos Guerrero Urbina 
+- Daniel Gutierrez Pizarro 
+- Ricardo López Núñez
+
+## Asignatura
+- Ingenieria de Software
+
+## Profesor:
+- Sebastian Salazar Molina
+
+## Fecha:
+- Lunes 27 de Junio, 1°Semestre 2014
+
+
+
+
+
+
 ## Laravel PHP Framework
 
 [![Latest Stable Version](https://poser.pugx.org/laravel/framework/version.png)](https://packagist.org/packages/laravel/framework) [![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.png)](https://packagist.org/packages/laravel/framework) [![Build Status](https://travis-ci.org/laravel/framework.png)](https://travis-ci.org/laravel/framework) [![License](https://poser.pugx.org/laravel/framework/license.png)](https://packagist.org/packages/laravel/framework)
