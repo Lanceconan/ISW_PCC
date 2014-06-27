@@ -1,5 +1,6 @@
 <?php
 
+// Buscar Controller.php
 class BuscarController extends BaseController {
 
 	protected $layout = 'layouts.master';
