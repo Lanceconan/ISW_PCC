@@ -5,7 +5,7 @@
 @section('javascript')
 <?php echo HTML::script('Js/funciones.js');?>
 @section('css')
-<?php echo HTML::style('Css/styles2.css');?>
+<?php echo HTML::style('Css/stylesDir.css');?>
 <html>
 
 <body>
