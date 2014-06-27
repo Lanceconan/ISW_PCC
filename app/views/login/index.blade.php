@@ -50,6 +50,7 @@
 		<div id="link-logo">
 			<a href=http://www.utem.cl><img src ="Images/logo.png"></a>
 		</div>
+        <div id="link";>{{HTML::link('admin','Logueo como Admin')}}</div>
 	</div>
     <div id="linea">
     </div>
