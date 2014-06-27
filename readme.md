@@ -5,7 +5,7 @@
 - Daniel Gutierrez Pizarro 
 - Ricardo López Núñez
 
-## Asignatura
+## Asignatura:
 - Ingenieria de Software
 
 ## Profesor:
