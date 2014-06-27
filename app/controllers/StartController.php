@@ -1,5 +1,5 @@
 <?php
-
+// Start Controller.php
 class StartController extends BaseController {
 
 	protected $layout = 'layouts.master';

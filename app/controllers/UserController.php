@@ -1,5 +1,6 @@
 <?php
 
+// User Controller.php
 class UserController extends \BaseController {
 
 	/**
