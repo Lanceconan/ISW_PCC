@@ -11,23 +11,20 @@
 <body>
 <div class="principal">
 	<h1>Borrar Usuario</h1>
-	<div class="menu">
-	<ul>
-		<li><a href="#">Manejo de cuentas</a>
-		<ul>
-			<li><a href="#">Agregar</a></li>
-			<li><a href="#">Reasignar</a></li>
-			<li><a href="#">Borrar</a></li>
-		</ul>
-		</li>
-		<li><a href="#">Buscar...</a></li>
-		<li><a href="#">Config. cuenta</a></li>
-		<li><a href="#">Salir</a></li>
-	</ul>
-	</div>
-
 	<h2>Desde ac&aacute se pueden borrar elementos desde la base de datos.</h2>
-	
+	<div class="menu">
+            <li>
+            {{HTML::link('#','Manejo de Cuentas')}}           
+            <ul>
+                <li>{{HTML::link('#','Agregar')}}</li>
+		<li>{{HTML::link('#','Reasignar')}}</li>
+		<li>{{HTML::link('/','Borrar')}}</li>
+            </ul>  
+            </li>
+            <li>{{HTML::link('#','Buscar')}}</li>
+            <li>{{HTML::link('#','Configurar')}}</li>
+            <li>{{HTML::link('/','Salir')}} </li>       
+	</div>
 	<div id="foot">
 		<p>UNIVERSIDAD TECNOLOGICA METROPOLITANA</p>
 		<p>Dieciocho 161, Santiago-Chile</p>
