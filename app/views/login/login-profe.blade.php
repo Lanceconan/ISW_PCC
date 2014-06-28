@@ -11,9 +11,9 @@
 <body>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <div class="principal">
-	<h1>Login como Administrador</h1>
+	<h1>Profesores</h1>
 	<div id="login">
-        {{ Form::open(array('method' => 'POST', 'url' => 'admin')) }}
+        {{ Form::open(array('method' => 'POST', 'url' => '/profesor')) }}
         {{ Form::label('rut', 'Rut'); }}
         {{ Form::text('rut'); }}
         {{ Form::label('password', 'Contraseña'); }} 
@@ -22,8 +22,9 @@
         {{ Form::checkbox('rememberme', true) }}
         {{ Form::submit('Ingresar'); }}
         {{ Form::close() }}
-    </div>
-            {{HTML::link('/','Volver a la página principal')}}
+</div>
+{{HTML::link('/','Volver a la página principal')}}
+<div id="logo"><img src="Images/utem.jpg"></div>
 	<div id="foot">
 		<p>UNIVERSIDAD TECNOLOGICA METROPOLITANA</p>
 		<p>Dieciocho 161, Santiago-Chile</p>

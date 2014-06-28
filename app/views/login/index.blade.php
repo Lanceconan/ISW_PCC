@@ -13,35 +13,8 @@
 <div class="principal">
 	<h1>Planificaci&oacuten semestral para asignaturas UTEM</h1>
 	<div id="login">
-        <form method="post" action="#">
-        <table >
-            <br>
-            <tr> 
-                    <select id="botones">
-                        <option value="director">Ingresar Como</option>
-                        <option value="director">Director</option>
-                        <option value="profesor">Profesor</option>
-                        <option value="comun">Comun</option>                        
-                    </select>
-            </tr> 
-            <tr>             
-                    <td><label id="botones">Usuario:</label></td>
-                    <td><input id="botones" type="number" name="usuario" placeholder="RUT" required></input></td>
-            </tr> 
-            <tr> 
-                    <td><label id="botones">Contraseña:</label></td>
-                    <td><input id="botones" type= "password" name="contrasena"  placeholder="Contraseña" required></input></td>
-                    <td></td>
-            <tr> 
-                    <td>
-                        <input id="botones" type="submit" value ="Ingresar" required></input>
-                        <input id="botones" type="reset" value="Limpiar">
-                    </td>
-            </tr> 
-            </tr> 
-            <br>
-        </table>
-</form>
+        <div id="link";>{{HTML::link('/revision','Revisar Planificación')}}</div>
+        <div id="link";>{{HTML::link('profesor','Login como Profesor')}}</div>
 </div>
 <div id="logo"><img src="Images/utem.jpg"></div>
 	<div id="foot">

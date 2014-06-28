@@ -2,18 +2,18 @@
 
 Route::resource('consulta','QueryController');
 
+Route::get('admin',"LoginController@loginAdmin");
+
+Route::post('admin',"LoginController@validarAdmin");
+
 Route::get('/',"StartController@Index");
-
-Route::get('/admin',"StartController@loginAdmin");
-
-Route::post('/admin',"StartController@validarAdmin");
-
 // Validamos los datos de inicio de sesión.
-Route::post('/', 'StartController@postLogin');
-
+Route::get('/revision',"LoginController@loginComun");
+Route::post('/revision',"LoginController@validarComun");
+Route::get('/profesor',"LoginController@loginProfe");
+Route::post('/profesor',"LoginController@validarProfe");
 // Nos indica que las rutas que están dentro de él sólo serán mostradas si antes el usuario se ha autenticado.
-Route::group(array('before' => 'auth'), function()
-{
+Route::group(array('before' => 'auth'), function(){
     // Esta será nuestra ruta de bienvenida.
     Route::get('/index', 'AdminController@getIndex');
 
@@ -37,12 +37,8 @@ Route::group(array('before' => 'auth'), function()
 
     Route::post('/opciones','AdminController@postConfig');
 
-});
-
-Route::group(array('before' => 'authProfe'), function()
-{
     // Esta será nuestra ruta de bienvenida.
-    Route::get('/index', 'TeacherController@getIndex');
+    //Route::get('/index', 'TeacherController@getIndex');
 
     // Esta ruta nos servirá para cerrar sesión.
     Route::get('logout', 'StartController@logOut');
@@ -64,12 +60,8 @@ Route::group(array('before' => 'authProfe'), function()
 
     Route::post('/opciones','TeacherController@postConfig');
 
-});
-
-Route::group(array('before' => 'auth'), function()
-{
     // Esta será nuestra ruta de bienvenida.
-    Route::get('/index', 'CommonController@getIndex');
+    //Route::get('/index', 'CommonController@getIndex');
 
     // Esta ruta nos servirá para cerrar sesión.
     Route::get('logout', 'StartController@logOut');
@@ -83,12 +75,8 @@ Route::group(array('before' => 'auth'), function()
 
     Route::post('/opciones','CommonController@postConfig');
 
-});
-
-Route::group(array('before' => 'auth'), function()
-{
     // Esta será nuestra ruta de bienvenida.
-    Route::get('/index', 'DirController@getIndex');
+    //Route::get('/index', 'DirController@getIndex');
 
     // Esta ruta nos servirá para cerrar sesión.
     Route::get('logout', 'StartController@logOut');

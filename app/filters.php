@@ -33,17 +33,16 @@ App::after(function($request, $response)
 |
 */
 
-Route::filter('auth', function()
-{
-	if (Auth::guest()) return Redirect::guest('login');
-});
-
 
 Route::filter('auth.basic', function()
 {
 	return Auth::basic();
 });
 
+Route::filter('auth', function()
+{
+	if (Auth::guest()) return Redirect::guest('/')->with('msg', 'No tienes acceso aquí si no estás logueado.');
+});
 /*
 |--------------------------------------------------------------------------
 | Guest Filter
