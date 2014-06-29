@@ -6,6 +6,7 @@
 <?php echo HTML::script('Js/funciones.js');?>
 @section('css')
 <?php echo HTML::style('Css/stylesCommon.css');?>
+//cambio css
 <html>
 
 <body>
