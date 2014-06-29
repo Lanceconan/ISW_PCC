@@ -20,6 +20,7 @@ body{
 	min-width: 70.35%;
 	min-height: 800px;
 	left: 150px;
+        right: 137px;
 	text-align: center;
 	font-family: verdana;
 
@@ -28,8 +29,8 @@ body{
 #foot
 {
 	background-color: #085394;
-	min-width: 70.5%;
-	min-height: 40px;
+	min-width: 78.05%;
+	min-height: 56px;
 	position: fixed;
 	top:90%;
 	left:150px;
@@ -50,9 +51,9 @@ body{
 #login
 {
 	border:double black 5px;	
-	position:relative;
-	top: 55%;
-	left:211px;	
+	position:fixed;
+	top: 25%;
+        left:530px;	
 	width:300px;
 	font-family: verdana;
 }
@@ -63,15 +64,15 @@ body{
 	position: fixed;
 	top:98.5%;
 	left:150px;
-	min-width: 70.5%;
+	min-width: 78.05%;
 	min-height: 11px;
 }
 
 #logo
 {
 	position: fixed;
-	left: 247px;
-	top:76%;
+	left: 420px;
+	top: 75%;
 	height: 99px;
 	width: 533px;
 }
@@ -126,16 +127,8 @@ ul, ol
 	display: block;
 }
 
-.busqueda
-{
-	position:fixed;
-	top:250px;
-	left:405px;
-}
-
-.configurar
-{
-	position:fixed;
-	top:250px;
-	left:405px;
+#regresar{
+position:fixed;
+top:60%;
+left:570px;
 }
