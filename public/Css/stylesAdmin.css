@@ -13,10 +13,9 @@ body{
 	background-color:#dddddd;
 	border: solid #B5ADAD 1px;
 	position: fixed;
-	min-width: 78.35%;
+	min-width: 70.35%;
 	min-height: 800px;
 	left: 150px;
-        right: 180px;
 	text-align: center;
 	font-family: verdana;
 
@@ -25,8 +24,8 @@ body{
 #foot
 {
 	background-color: #085394;
-	min-width: 78.5%;
-	min-height: 56px;
+	min-width: 70.5%;
+	min-height: 40px;
 	position: fixed;
 	top:90%;
 	left:150px;
@@ -60,7 +59,7 @@ body{
 	position: fixed;
 	top:98.5%;
 	left:150px;
-	min-width: 78.5%;
+	min-width: 70.5%;
 	min-height: 11px;
 }
 
@@ -75,16 +74,14 @@ body{
 
 .menu
 {
-	background-color: #085394;
-        border:double #085394 2px;
-        position: fixed;
-	top: 85px;
+	position: fixed;
+	top: 65px;
 	left:150px;
-	width: 1068px;
+	width: 733px;
 	min-height: 14px;
-	font-size: 20px;
+	font-size: 14px;
 	margin: auto;
-	text-align: center;
+	text-align: left;
 }
 
 ul, ol
@@ -103,7 +100,7 @@ ul, ol
 	color: white;
 	text-decoration: none;
 	display:block;
-	padding:10px 90.265px;
+	padding:10px 57.265px;
 	float:left;
 }
 
