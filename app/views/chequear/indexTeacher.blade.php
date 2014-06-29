@@ -19,8 +19,8 @@
 		<li>{{ HTML::link('logout', 'Salir')}}</li>
 	</ul>
 	</div>
-	<h2>Desde ac&aacute se pueden revisar las planificaciones de cada unidad/d&iacute/clase para comprobar su cumplimiento.</h2>
-
+	<div id="subtitulo"><h2>Desde ac&aacute se pueden las planificaciones correspondientes a sus asignaturas asignadas.</h2></div>	<div class="Plan">
+		
 	
 	<div id="foot">
 		<p>UNIVERSIDAD TECNOLOGICA METROPOLITANA</p>

@@ -5,7 +5,7 @@
 @section('javascript')
 <?php echo HTML::script('Js/funciones.js');?>
 @section('css')
-<?php echo HTML::style('Css/styleCommon.css');?>
+<?php echo HTML::style('Css/stylesCommon.css');?>
 <html>
 
 <body>
@@ -17,6 +17,21 @@
 		<li>{{ HTML::link('opciones', 'Config. Cuenta')}}</li>
 		<li>{{ HTML::link('logout', 'Salir')}}</li>
 	</ul>
+	</div>
+
+	<div class="busqueda">
+		<p>Buscar por:</p>
+		<p>{{Form::open(array('url' => 'buscar'))}}</p>
+		<p>{{Form::label('apellido','Apellido Profesor')}}</p>
+		<p>{{Form::text('apellido')}}</p>
+		<p>{{Form::label('nombre','Nombre Profesor')}}</p>
+		<p>{{Form::text('nombre')}}</p>
+		<p>{{Form::label('asignatura','Asignatura')}}</p>
+		<p>{{Form::text('ramo')}}</p>
+		<p>{{Form::label('departamento','Departamento')}}</p>
+		<p>{{Form::text('depto')}}</p>
+		<p>{{Form::submit('Buscar')}}</p>
+		{{Form::close()}}
 	</div>
 	
 	<div id="foot">

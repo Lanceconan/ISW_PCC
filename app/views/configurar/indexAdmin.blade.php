@@ -13,17 +13,29 @@
 	<h1>B&uacutesqueda</h1>
 	<h1>Cambiar Contrase&ntildea</h1>
 	<div class="menu">
-	<li>
-            {{HTML::link('#','Manejo de Cuentas')}}           
-            <ul>
-                <li>{{HTML::link('#','Agregar')}}</li>
-		<li>{{HTML::link('#','Reasignar')}}</li>
-		<li>{{HTML::link('/','Borrar')}}</li>
-            </ul>  
-            </li>
-            <li>{{HTML::link('#','Buscar')}}</li>
-            <li>{{HTML::link('#','Configurar')}}</li>
-            <li>{{HTML::link('/','Salir')}} </li>  
+	<ul>
+		<li><a href="#">Manejo de cuentas</a>
+		<ul>
+			<li><a href="#">Agregar</a></li>
+			<li><a href="#">Reasignar</a></li>
+			<li><a href="#">Borrar</a></li>
+		</ul>
+		</li>
+		<li><a href="#">Buscar...</a></li>
+		<li><a href="#">Config. cuenta</a></li>
+		<li><a href="#">Salir</a></li>
+	</ul>
+	</div>
+	<div class="configurar">
+		<p>{{Form::open(array('url' => 'configurar'))}}</p>
+		<p>{{Form::label('correo','Correo')}}</p>
+		<p>{{Form::text('correo')}}</p>
+		<p>{{Form::label('password','Contraseña')}}</p>
+		<p>{{Form::text('password')}}</p>
+		<p>{{Form::label('password','Confirmar Password')}}</p>
+		<p>{{Form::text('password')}}</p>
+		<p>{{Form::submit('Enviar')}}</p>
+		{{Form::close()}}
 	</div>
 	
 	<div id="foot">

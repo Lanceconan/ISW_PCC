@@ -13,9 +13,16 @@
 <div class="principal">
 	<h1>Planificaci&oacuten semestral para asignaturas UTEM</h1>
 	<div id="login">
-        <div id="link";>{{HTML::link('/revision','Revisar Planificación')}}</div>
-        <div id="link";>{{HTML::link('profesor','Login como Profesor')}}</div>
-</div>
+        {{ Form::open(array('method' => 'POST', 'url' => '/')) }}
+        {{ Form::label('rut', 'Rut'); }}
+        {{ Form::text('rut'); }}
+        {{ Form::label('password', 'Contraseña'); }} 
+        {{ Form::password('password'); }}
+        {{ Form::label('lblRememberme', 'Recordar contraseña') }}
+        {{ Form::checkbox('rememberme', true) }}
+        {{ Form::submit('Ingresar'); }}
+        {{ Form::close() }}
+    </div>
 <div id="logo"><img src="Images/utem.jpg"></div>
 	<div id="foot">
 		<p>UNIVERSIDAD TECNOLOGICA METROPOLITANA</p>

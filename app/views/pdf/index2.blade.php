@@ -5,28 +5,23 @@
 @section('javascript')
 <?php echo HTML::script('Js/funciones.js');?>
 @section('css')
-<?php echo HTML::style('Css/stylesAdmin.css');?>
+<?php echo HTML::style('Css/styles2.css');?>
 <html>
 
 <body>
 <div class="principal">
-	<h1>Borrar Usuario</h1>
+<h1>Generar PDF</h1>
 	<div class="menu">
 	<ul>
-		<li><a href="#">Manejo de cuentas</a>
-		<ul>
-			<li><a href="#">Agregar</a></li>
-			<li><a href="#">Reasignar</a></li>
-			<li><a href="#">Borrar</a></li>
-		</ul>
-		</li>
-		<li><a href="#">Buscar...</a></li>
-		<li><a href="#">Config. cuenta</a></li>
-		<li><a href="#">Salir</a></li>
+		<li>{{ HTML::link('crear', 'Crear Plan') }}</li>
+		<li>{{ HTML::link('revisar', 'Revisar Plan')}}</li>
+		<li>{{ HTML::link('reporte', 'Generar PDF')}}</li>
+		<li>{{ HTML::link('buscar', 'Buscar...')}}</li>
+		<li>{{ HTML::link('opciones', 'Config. Cuenta')}}</li>
+		<li>{{ HTML::link('logout', 'Salir')}}</li>
 	</ul>
 	</div>
-
-	<h2>Desde ac&aacute se pueden borrar elementos desde la base de datos.</h2>
+	<h2>Genera un reporte en PDF con las asignaturas cuyos profesores a&uacuten no ingresan su planificaci&oacute</h2>
 	
 	<div id="foot">
 		<p>UNIVERSIDAD TECNOLOGICA METROPOLITANA</p>

@@ -18,6 +18,17 @@
 		<li>{{ HTML::link('logout', 'Salir')}}</li>
 	</ul>
 	</div>
+	<div class="configurar">
+		<p>{{Form::open(array('url' => 'configurar'))}}</p>
+		<p>{{Form::label('correo','Correo')}}</p>
+		<p>{{Form::text('correo')}}</p>
+		<p>{{Form::label('password','Contraseña')}}</p>
+		<p>{{Form::text('password')}}</p>
+		<p>{{Form::label('password','Confirmar Password')}}</p>
+		<p>{{Form::text('password')}}</p>
+		<p>{{Form::submit('Enviar')}}</p>
+		{{Form::close()}}
+	</div>
 	
 	<div id="foot">
 		<p>UNIVERSIDAD TECNOLOGICA METROPOLITANA</p>
