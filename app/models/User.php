@@ -1,27 +1,40 @@
 <?php
 
-class Docente extends eloquent
-{
-	public $timestamp=False;
+use Illuminate\Auth\UserInterface;
+use Illuminate\Auth\Reminders\RemindableInterface;
+
+class User extends Eloquent implements UserInterface, RemindableInterface {
+
+	/**
+	 * The database table used by the model.
+	 *
+	 * @var string
+	 */
+
+	protected $fillable = array('rut', 'password');
 	protected $table = 'docentes';
 	protected $fillable = array('nombre', 'apellidos','password','email');
+
+	/**
+	 * The attributes excluded from the model's JSON form.
+	 *
+	 * @var array
+	 */
 	protected $hidden = array('password');
 
-	public function administrativos()
+	public static function isLogged()
 	{
-		return $this->belongsTo('Administrativo','docentes_id');
+		if(Session::has('user_id'))
+			return true;
+		else
+			return false;
 	}
 
-	public function cursos()
-	{
-		return $this->hasMany('Curso','docentes_id');
-	}
-	
-	public function departamentos()
-	{
-		return $this->belongsTo('Departamento');
-	}
-
+	/**
+	 * Get the unique identifier for the user.
+	 *
+	 * @return mixed
+	 */
 	public function getAuthIdentifier()
 	{
 		return $this->getKey();
@@ -81,8 +94,26 @@ class Docente extends eloquent
     //este metodo se debe implementar por la interfaz
     // y sirve para obtener la clave al momento de validar el inicio de sesión 
 
-	
+	public function rol_Usuario()
+	{
+		return $this->belongsTo('Rol_Usuario', 'usuarios_rut');
+	}
 
-}
+	public static function insert_docente($nombre, $apellido,$email,$password)
+    {
+ 
+        $query = DB::table('docentes')->insert(array(
+                 'nombre' => $nombre,
+                 'apellido' => $apellido,
+                 'email'  => $email,
+                 'password' => Hash::make($password),
+                 'departamento_nombre' => 'facultad'
+        ));
+ 
+        return $query;
+ 
+    } 
+
+	
 
 }
