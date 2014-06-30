@@ -1,26 +1,26 @@
 <?php
 
-Route::resource('consulta','QueryController');
 
 Route::get('admin',"LoginController@loginAdmin");
 
 Route::post('admin',"LoginController@validarAdmin");
 
 Route::get('/',"StartController@Index");
-// Validamos los datos de inicio de sesión.
+
 Route::get('/revision',"LoginController@loginComun");
 Route::post('/revision',"LoginController@validarComun");
 Route::get('/profesor',"LoginController@loginProfe");
 Route::post('/profesor',"LoginController@validarProfe");
-// Nos indica que las rutas que están dentro de él sólo serán mostradas si antes el usuario se ha autenticado.
-Route::group(array('before' => 'auth'), function(){
-    // Esta será nuestra ruta de bienvenida.
+Route::get('/registrar','RegisterController@getIndex');
+Route::post('/registrar','RegisterController@postIndex');
+
+ Route::group(array('before' => 'auth'), function(){ 
     Route::get('/index', 'AdminController@getIndex');
 
-    // Esta ruta nos servirá para cerrar sesión.
+   
     Route::get('logout', 'StartController@logOut');
 
-    //Servirá para buscar.
+    
     Route::get('/buscar','AdminController@getIndex');
 
     Route::post('/buscar','AdminController@getIndex');
@@ -37,13 +37,13 @@ Route::group(array('before' => 'auth'), function(){
 
     Route::post('/opciones','AdminController@postConfig');
 
-    // Esta será nuestra ruta de bienvenida.
-    //Route::get('/index', 'TeacherController@getIndex');
+   
+    Route::get('/index', 'TeacherController@getIndex');
 
-    // Esta ruta nos servirá para cerrar sesión.
+    
     Route::get('logout', 'StartController@logOut');
 
-    //Servirá para buscar.
+    
     Route::get('/buscar','TeacherController@getIndex');
 
     Route::post('/buscar','TeacherController@getIndex');
@@ -60,13 +60,13 @@ Route::group(array('before' => 'auth'), function(){
 
     Route::post('/opciones','TeacherController@postConfig');
 
-    // Esta será nuestra ruta de bienvenida.
-    //Route::get('/index', 'CommonController@getIndex');
+   
+    Route::get('/index', 'CommonController@getIndex');
 
-    // Esta ruta nos servirá para cerrar sesión.
+   
     Route::get('logout', 'StartController@logOut');
 
-    //Servirá para buscar.
+    
     Route::get('/buscar','CommonController@getBuscar');
 
     Route::post('/buscar','CommonController@postBuscar');
@@ -75,13 +75,12 @@ Route::group(array('before' => 'auth'), function(){
 
     Route::post('/opciones','CommonController@postConfig');
 
-    // Esta será nuestra ruta de bienvenida.
-    //Route::get('/index', 'DirController@getIndex');
+  
+    Route::get('/index', 'DirController@getIndex');
 
-    // Esta ruta nos servirá para cerrar sesión.
+ 
     Route::get('logout', 'StartController@logOut');
 
-    //Servirá para buscar.
     Route::get('/buscar','DirController@getIndex');
 
     Route::post('/buscar','DirController@getIndex');
