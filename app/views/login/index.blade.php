@@ -26,6 +26,7 @@
     <div id="Inscribir">{{HTML::link('registrar','¿No tiene una cuenta? ¡Regístrese acá!')}}</div>
 <div id="logo"><img src="Images/logo-utem.jpg"></div>
   <div id="link";>{{HTML::link('admin','Logueo como Admin')}}</div>
+  <div id="link_plan";>{{HTML::link('admin','Buscar Planificación')}}</div>
 	<div id="foot">
 		<p>UNIVERSIDAD TECNOLOGICA METROPOLITANA</p>
 		<p>Dieciocho 161, Santiago-Chile</p>
