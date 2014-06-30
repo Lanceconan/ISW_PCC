@@ -6,6 +6,7 @@
 <?php echo HTML::script('Js/funciones.js');?>
 @section('css')
 <?php echo HTML::style('Css/stylesTeacher.css');?>
+<!-----------final---->
 <html>
 
 <body>
