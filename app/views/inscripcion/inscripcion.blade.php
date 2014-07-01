@@ -5,7 +5,7 @@
 @section('javascript')
 <?php echo HTML::script('Js/funciones.js');?>
 @section('css')
-<?php echo HTML::style('Css/styles.css');?>
+<?php echo HTML::style('Css/stylesCommon.css');?>
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
@@ -31,11 +31,6 @@
 			<p>{{ Form::password('password2') }}</p>
 
 			<p>{{ Form::label('repetir contrasena', 'Email') }}</p>
-			<p>{{ Form::text('mail1') }}</p>
-
-			<p>{{ Form::label('repetir contrasena', 'Repetir Email') }}</p>
-			<p>{{ Form::text('mail2') }}</p>
-
         <p>{{ Form::submit('Enviar') }}</p>
 
 		{{ Form::close() }}
